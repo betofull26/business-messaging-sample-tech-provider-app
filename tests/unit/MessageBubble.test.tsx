@@ -50,8 +50,7 @@ describe('MessageBubble', () => {
       render(
         <MessageBubble type="call_event" event="ended" direction="inbound" duration={125} timestamp={Date.now()} />,
       );
-      expect(screen.getByText(/Incoming call/)).toBeInTheDocument();
-      expect(screen.getByText(/2:05/)).toBeInTheDocument();
+      expect(screen.getByText(/Incoming call \u00B7 2:05/)).toBeInTheDocument();
     });
 
     it('shows missed call', () => {
