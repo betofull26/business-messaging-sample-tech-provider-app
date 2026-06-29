@@ -144,3 +144,7 @@ next-env.d.ts
 
 certificates
 .env*.local
+
+# Playwright
+/playwright-report/
+/test-results/
